@@ -42,9 +42,10 @@ public class CoinController {
         String coinList = "";
         for (Coin e : myList) {
             total = total + (e.getValue() * e.getQuantity());
-            coinList = coinList + e.getQuantity() + e.getName();
+            coinList = coinList + e.getQuantity() + " " + e.getName() + " ";
+
         }
-        System.out.println( coinList + "Total Coins " + total);
+        System.out.println( coinList + "The piggy bank holds " + total);
         return new ResponseEntity<>(HttpStatus.OK);
 
     }

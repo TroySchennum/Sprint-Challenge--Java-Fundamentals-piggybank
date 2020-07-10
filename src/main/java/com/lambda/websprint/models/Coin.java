@@ -12,10 +12,10 @@ public class Coin {
     String name;
     String namepural;
     double value;
-    double quantity;
+    long quantity;
 
 
-    public Coin(String name, String namepural, double value, double quantity) {
+    public Coin(String name, String namepural, double value, long quantity) {
         this.name = name;
         this.namepural = namepural;
         this.value = value;
@@ -63,7 +63,7 @@ public class Coin {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(long quantity) {
         this.quantity = quantity;
     }
 
